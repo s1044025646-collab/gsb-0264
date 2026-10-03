@@ -1,0 +1,21 @@
+{
+  "name": "offline-belady-service",
+  "version": "1.0.0",
+  "private": true,
+  "description": "离线最优页置换（Belady）缺页过程分析后端：API + CLI + SQLite",
+  "type": "module",
+  "engines": {
+    "node": ">=22.5.0"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "npm run build && node --test \"dist/tests/**/*.test.js\"",
+    "start": "node dist/api/server.js",
+    "demo": "npm run build && node dist/demo.js",
+    "cli": "node dist/cli/cli.js"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "typescript": "^5.7.0"
+  }
+}
