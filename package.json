@@ -1,0 +1,24 @@
+{
+  "name": "offline-page-replacement",
+  "version": "1.0.0",
+  "description": "离线最优页置换（Belady MIN）缺页过程分析后端：API 与 CLI",
+  "type": "module",
+  "main": "dist/cli/index.js",
+  "bin": {
+    "page-sim": "dist/cli/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "test": "node --import tsx --test tests/*.test.ts",
+    "start": "tsx src/cli/index.ts serve",
+    "demo": "tsx src/cli/index.ts demo"
+  },
+  "engines": {
+    "node": ">=22.5"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "tsx": "^4.19.2",
+    "typescript": "^5.6.0"
+  }
+}
